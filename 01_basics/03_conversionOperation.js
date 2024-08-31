@@ -121,5 +121,20 @@ let gameCounter = 100
 gameCounter++           // refer "prefix and postfix js mdn" from googling
 console.log(gameCounter);
 
+console.log("=================== prefix and postfix operator =====================")
+
+// If used postfix, with operator after operand (for example, x++), the increment operator increments and returns the value before incrementing.
+let x = 3;
+const y = x++;
+console.log(`x:${x}, y:${y}`); // output: x:4, y:3
+
+// If used prefix, with operator before operand (for example, ++a), the increment operator increments and returns the value after incrementing.
+let a = 3;
+let b = ++a;
+console.log(`a:${a}, b:${b}`); // outuput: a:4, b:4
+
+// ++(++x); // SyntaxError: Invalid left-hand side expression in prefix operation
+
 // link to study https://tc39.es/ecma262/multipage/abstract-operations.html#sec-type-conversion
+
 
