@@ -80,3 +80,46 @@ let Age = 45
 let numberString = String(Age)
 console.log(numberString);
 console.log(typeof numberString)
+
+
+// ********************* Operations ************************
+console.log("======================== Operation =================");
+let value = 3
+let negValue = -value
+console.log(negValue);
+
+console.log("============= Basic Math operation ===========")
+console.log(2+2);
+console.log(2-2);
+console.log(2*2);
+console.log(2**2); // 2 power 2
+console.log(2**3);
+console.log(2/2);
+console.log(2%2);
+
+console.log("================== ToPrimitive ===============");
+console.log("1" + 2);
+console.log(1 + "2");
+console.log("1" + 2 + 2); // whichever is first type, it is converted on that type
+console.log(1 + 2 + "2");
+console.log(3 + 2 * 4 / 5);
+
+console.log("================== Tricky Conversion ================");
+console.log(true);
+console.log(+true); 
+// console.log(true+); // SyntaxError: Unexpected token ')'
+console.log(+"");
+
+let num1, num2, num3
+num1 = num2 = num3 = 2 + 2
+
+console.log(num1);
+console.log(num2);
+console.log(num3);
+
+let gameCounter = 100
+gameCounter++           // refer "prefix and postfix js mdn" from googling
+console.log(gameCounter);
+
+// link to study https://tc39.es/ecma262/multipage/abstract-operations.html#sec-type-conversion
+
