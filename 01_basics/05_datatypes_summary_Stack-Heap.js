@@ -50,3 +50,30 @@ console.log(typeof myObj);
 console.log(typeof myFunction);
 
 // please refer: https://262.ecma-international.org/5.1/#sec-11.4.3
+
+// ======= Stack Memory and Heap Memory ==========
+// Primitive data types used Stack memory & Non-primitive data types used Heap memory
+// From Stack memory, you got copy of declared variable. From Heap memory, you got reference of original value.  
+
+console.log("======= Stack Memory and Heap Memory ==========");
+
+console.log(" ===== Primitive data types (Stack memory) =====");
+let myYoutubeName = "hareshvaviyadotcom"
+let anotherName = myYoutubeName
+anotherName = "chaiaurcode"
+
+console.log(myYoutubeName);     // Output: hareshvaviyadotcom
+console.log(anotherName);       // Output: chaiaurcode
+
+console.log(" ===== Non-Primitive data types (Heap memory) =====");
+let userOne = {
+    email: "haresh@google.com",
+    upi: "user@fb"
+}
+let userTwo = userOne
+userTwo.email = "harry@rediffmail.com"
+
+console.log(userOne.email);         // Output: harry@rediffmail.com
+console.log(userTwo.email);         // Output: harry@rediffmail.com
+
+
