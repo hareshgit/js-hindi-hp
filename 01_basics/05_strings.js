@@ -44,6 +44,22 @@ console.log(anotherName);
 console.log(anotherName1);
 
 console.log("===== Trim =====");
-
+const tName = "      Haresh  "
+const tName1 = "      Har  esh  "
+console.log(tName);
+console.log(tName.trim());
+console.log(tName1);
+console.log(tName1.trim());
 
 console.log("===== Replace =====");
+const url = "https://haresh.com/haresh%20patel"
+console.log(url.replace('%20', '-'));
+console.log(url.includes('haresh'));
+console.log(url.includes('rajesh'));
+
+console.log("===== Split =====");
+const spName = "Haresh-N-Patel"
+console.log(spName.split('-'));
+console.log(spName.bold());
+
+
