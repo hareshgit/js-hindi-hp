@@ -76,5 +76,30 @@ console.log("=============== value available inobject or not ==============");
 console.log(tinderUser1.hasOwnProperty(`isLoggedIn`));              // Ouput: true
 console.log(tinderUser1.hasOwnProperty(`firstname`));               // Ouput: false
 
+console.log("=============== De structuring of object ==============");
+const course = {
+    courseName: "js in hindi",
+    price: "999",
+    courseInstructor: "haresh"
+}
+
+console.log(course.courseInstructor);
+console.log(course["courseInstructor"]);
+
+const {courseInstructor} = course
+console.log(courseInstructor);
+
+const {courseInstructor: instructor} = course
+const {courseInstructor: instructor} = course
+const {courseInstructor: instructor} = course
+console.log(instructor);
+
+console.log("=============== API ==============");
+// mdn: https://developer.mozilla.org/
+// API: https://randomuser.me/
+// JSON formatter: https://jsonformatter.org/
+
+
+
 
 
