@@ -109,4 +109,17 @@ handleObject(user);             // Output: Username is haresh and price is 199
 handleObject({                  // Output: Username is sam and price is 299
     username: "sam",
     price: 299
-})  
+})
+
+console.log("=============== Functions with Arrays ====================");
+const myNewArray = [200, 400, 100, 600]
+
+function returnThirdValue(getArray){
+    return getArray[1]
+}
+
+console.log(returnThirdValue(myNewArray));      // Output: 400
+
+console.log(returnThirdValue([200, 100, 600, 400]));    // Output: 100
+
+console.log("=============== Function scope, Global scope, Local scope etc.. ====================");
