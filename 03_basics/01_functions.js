@@ -71,3 +71,42 @@ function loginUserMessasge1(username = "sam"){
 }
     
 console.log(loginUserMessasge1("haresh"));
+
+// Shoping Cart
+console.log("=============== Shopping Cart ====================");
+function calculateCartPrice(num1){
+    return num1
+}
+console.log(calculateCartPrice(2));         // Output: 2
+
+function calculateCartPrice1(num2){
+    return num2
+}
+console.log(calculateCartPrice1(200, 400, 500));         // Output: 200
+
+function calculateCartPrice2(...num3){                  //... is a rest operator. Sometime use as a spread
+    return num3
+}
+console.log(calculateCartPrice2(200, 400, 500));         // Output: [ 200, 400, 500 ]
+
+function calculateCartPrice3(val1, val2, ...num4){       //... is a rest operator. Sometime use as a spread
+    return num4
+}
+console.log(calculateCartPrice3(200, 400, 500, 2000));         // Output: [ 500, 2000 ]
+
+console.log("=============== Functions with Object ====================");
+const user = {
+    username: "haresh",
+    price: 199
+}
+
+function handleObject (anyobject){
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
+}
+
+handleObject(user);             // Output: Username is haresh and price is 199
+
+handleObject({                  // Output: Username is sam and price is 299
+    username: "sam",
+    price: 299
+})  
