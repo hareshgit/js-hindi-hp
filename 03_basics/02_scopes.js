@@ -39,3 +39,33 @@ if (true){
 console.log(d);         // Output: 100
 console.log(e);         // Output: 200
 console.log(f);         // Output: 30
+
+console.log("================== netsed scope =================");
+function one(){
+    const username = "haresh"
+    function two(){
+        const website = "youtube"
+        console.log(username);                  // Output: haresh
+        console.log(username + website);        // Output: haresh youtube
+    }
+    // console.log(website);           // Output: ReferenceError: website is not defined
+    two()
+}
+one()
+// console.log(username);           // Output: ReferenceError: username is not defined
+
+console.log("================== Interesting =================");
+
+console.log(addOne(5));         //Output: 6
+
+function addOne(num){
+    return num + 1;
+}
+// addOne(5)
+
+// addTwo(5)           // ReferenceError: Cannot access 'addTwo' before initialization
+
+const addTwo = function(num){
+    return num + 2
+}
+// addTwo(5)
